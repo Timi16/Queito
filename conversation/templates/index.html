@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Say.io</title>
+    <link rel="icon" type="image/png" href="{% static 'assets/shushing-face.png' %}"  alt="shushing-face"/>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body onload="hideLoader()">
+    <header class="container-1">
+        <div class="text-1">say.<span class="text-1-red">io</span></div>
+        <div class="text-2">say your mind.</div>
+    </header>
+
+    <section class="container-2">
+        <div class="sign-up-box">
+            <div class="sign-up-box-items">
+                <header class="text-3">Sign Up</header>
+                <form action="" method="POST"> <!-- Assuming 'signup' is the URL name for your signup view -->
+                    {% csrf_token %}
+                    <input class="input-box" type="email" name="email" placeholder="Enter your Email">
+                    <input class="input-box" type="password" name="password" id="password" placeholder="Enter your Password">
+                    <input class="input-box" type="password" name="confirm_password" id="confirm-password" placeholder="Confirm Password">
+                    <p id="message"></p>
+                    <input type="submit" value="Sign Up">
+                </form>
+                <span class="login-link">Have an Account? <a class="link" href="{% url 'login' %}">Login now</a></span>
+            </div>
+        </div>
+    </section>
+    
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script src="{% static 'app.js' %}"></script>
+</body>
+</html>

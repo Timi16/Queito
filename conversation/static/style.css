@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+  background-color: rgb(1, 24, 1);
+}
+
+
+.container-1{
+  margin-top: 50px;
+}
+
+.container-1 .text-1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    
+}
+
+.text-1-red{
+    color: red;
+}
+
+.text-2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    
+}
+
+.container-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sign-up-box {
+    background-color: white;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign-up-box-items {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure form elements take up full width */
+    text-align: center; /* Center the login button */
+}
+
+.sign-up-box-1 {
+    background-color: white;
+    width: 300px;
+    height: auto; /* Change height to auto to accommodate dynamic content */
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 20px; /* Add padding for better spacing */
+    display: flex;
+    text-align: center;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.text-3 {
+    font-size: 30px;
+    margin-bottom: 20px; /* Add margin bottom to create space between header and form */
+}
+
+.input-box {
+    width: 100%; /* Make input boxes fill the width of the container */
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: rgb(1, 24, 1); /* Change button background color */
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 10px 20px; /* Adjust padding */
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px; /* Adjust margin top */
+    outline: none;
+    border: none;
+}
+
+
+p{
+  font-size: 14px;
+  margin: 15px 0;
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.login-link{
+    margin-top: 20px;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(32, 54, 32);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+@media only screen and (max-width: 540px){
+  .container-1{
+    margin-top: 100px;
+  }
+}
+
+
+
+
+
+.main{
+  background-color: rgb(1, 24, 1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-5{
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 310px;
+  height: 120px;
+  padding: 10px ;
+  font-size: 20px;
+  background-color: rgb(234, 165, 165);
+  display: flex;
+  border: none;
+  outline: none;
+}
+
+.text-5:focus{
+  outline: none;
+}
+
+.main-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main-1 .heading{
+  background-color: rgb(247, 101, 125);
+  width: 310px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;  
+  margin-top: 60px;
+  color: white;
+  display: flex;
+  gap: 10px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-1 img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+section .img-2{
+  width: 20px;
+  height: 20px;
+}
+
+.text-6{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  color: white;
+}
+
+button{
+  padding: 20px 20px 20px 20px;
+  width: 250px;
+  margin-top: 40px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 40px auto
+}
+
+.universal-container-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
